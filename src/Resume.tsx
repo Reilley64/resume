@@ -1,10 +1,11 @@
-import {Document, Font, Link, Page, Text, View} from "@react-pdf/renderer";
+import { Document, Font, Link, Page, Text, View } from "@react-pdf/renderer";
 import React from "react";
+
+import Project from "./components/Project";
 import data from "./data.json";
 import tw from "./tailwind";
-import Project from "./components/Project";
 
-Font.registerHyphenationCallback(word => [word]);
+Font.registerHyphenationCallback((word) => [word]);
 
 Font.register({
   family: "Geist Sans",
@@ -28,7 +29,7 @@ Font.register({
       src: "src/fonts/Geist-Bold.otf",
       fontWeight: "bold",
       fontStyle: "normal",
-    }
+    },
   ],
 });
 
@@ -54,7 +55,7 @@ Font.register({
       src: "src/fonts/GeistMono-Bold.otf",
       fontWeight: "bold",
       fontStyle: "normal",
-    }
+    },
   ],
 });
 
@@ -71,9 +72,7 @@ function Resume() {
 
           <View style={tw("w-full h-[1px] bg-[#666666] mt-0.5 mb-1")} />
 
-          <Text style={tw("text-[9px] text-[#666666] text-center")}>
-            {data.description}
-          </Text>
+          <Text style={tw("text-[9px] text-[#666666] text-center")}>{data.description}</Text>
         </View>
 
         <View style={tw("items-center justify-center mt-2.5")}>
@@ -82,7 +81,9 @@ function Resume() {
 
           <View style={tw("text-[9px] text-[#666666] text-center items-center")}>
             {data.skills.map((skill, i) => (
-              <Text key={skill.heading} style={i > 0 ? tw("mt-0.5") : undefined}><Text style={tw("font-bold")}>{skill.heading}:</Text> {skill.items.join(", ")}</Text>
+              <Text key={skill.heading} style={i > 0 ? tw("mt-0.5") : undefined}>
+                <Text style={tw("font-bold")}>{skill.heading}:</Text> {skill.items.join(", ")}
+              </Text>
             ))}
           </View>
         </View>
@@ -91,32 +92,41 @@ function Resume() {
           <Text style={tw("uppercase text-[20px]")}>Experience</Text>
           <View style={tw("w-full h-[1px] bg-[#666666] mt-0.5 mb-1")} />
 
-          {data.experience.map((experience, x) => <Project key={experience.title} {...experience} />)}
+          {data.experience.map((experience) => (
+            <Project key={experience.title} {...experience} />
+          ))}
         </View>
 
         <View style={tw("mt-2.5 w-full")}>
           <Text style={tw("text-[9px] text-[#666666]")}>Referees available upon request</Text>
         </View>
 
-        <View style={tw("items-center mt-2.5")}>
+        <View style={tw("items-center mt-2.5 mb-[-16px]")}>
           <Text style={tw("uppercase text-[20px]")}>Education</Text>
           <View style={tw("w-full h-[1px] bg-[#666666] mt-0.5 mb-1")} />
 
-          {data.education.map((education) => <Project key={education.title} {...education} />)}
+          {data.education.map((education) => (
+            <Project key={education.title} {...education} />
+          ))}
         </View>
 
-        <View style={tw("items-center mt-2.5")}>
+        <View style={tw("items-center mt-2.5 mb-[-16px]")}>
           <Text style={tw("uppercase text-[20px]")}>Projects</Text>
           <View style={tw("w-full h-[1px] bg-[#666666] mt-0.5 mb-1")} />
-          {data.projects.map((project) => <Project key={project.title} {...project} />)}
+          {data.projects.map((project) => (
+            <Project key={project.title} {...project} />
+          ))}
         </View>
 
         <View style={tw("mt-2.5")}>
-          <Text style={tw("text-[9px] text-[#666666]")}>This resume was written using code, check it out here: <Link src="https://github.com/Reilley64/resume">https://github.com/Reilley64/resume</Link></Text>
+          <Text style={tw("text-[9px] text-[#666666]")}>
+            This resume was written using code, check it out here:{" "}
+            <Link src="https://github.com/Reilley64/resume">https://github.com/Reilley64/resume</Link>
+          </Text>
         </View>
       </Page>
     </Document>
-  )
+  );
 }
 
 export default Resume;

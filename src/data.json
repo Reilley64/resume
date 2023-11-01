@@ -26,15 +26,7 @@
     },
     {
       "heading": "Frameworks",
-      "items": [
-        "React.js",
-        "Vue.js",
-        "Express.js",
-        "Java EE/Jakarta EE",
-        "Spring Boot",
-        "Ruby on Rails",
-        "Django"
-      ]
+      "items": ["React.js", "Vue.js", "Express.js", "Java EE/Jakarta EE", "Spring Boot", "Ruby on Rails", "Django"]
     },
     {
       "heading": "Infrastructure",
