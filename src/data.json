@@ -3,35 +3,37 @@
   "location": "Melbourne, Victoria",
   "phoneNumber": "+61 435 887 041",
   "email": "reilleygray@gmail.com",
-  "website": "linkedin.com/in/reilley-gray/",
-  "description": "Software Developer with over four years of experience in fullstack development. Expertise in Java and JavaScript, and a proficiency in React.js for front-end development. Committed to delivering innovative solutions and continuously expanding my skill set. Ready to contribute to your team's success through collaborative efforts.",
+  "website": "linkedin.com/in/reilley-gray",
+  "description": "Software Developer with over four years of experience in fullstack development. Expertise in Java and JavaScript, and a proficiency in React.js for front-end development. Committed to delivering innovative solutions and continuously expanding my skill set over the entire software development lifecycle. Ready to contribute to your team's success through collaborative efforts.",
   "skills": [
     {
-      "heading": "Frontend",
+      "heading": "Languages",
       "items": [
         "Javascript",
         "Node.js",
         "Typescript",
-        "React.js",
-        "Vue.js",
+        "Java",
+        "Ruby",
+        "Python",
+        "PHP",
         "HTML",
-        "CSS"
+        "CSS",
+        "SQL",
+        "MySQL",
+        "PostgreSQL",
+        "Redis"
       ]
     },
     {
-      "heading": "Backend",
+      "heading": "Frameworks",
       "items": [
-        "Java",
-        "EJB",
+        "React.js",
+        "Vue.js",
+        "Express.js",
+        "Java EE/Jakarta EE",
         "Spring Boot",
-        "Ruby",
         "Ruby on Rails",
-        "Python",
-        "Django",
-        "PHP",
-        "SQL",
-        "MySQL",
-        "PostgreSQL"
+        "Django"
       ]
     },
     {
@@ -39,6 +41,7 @@
       "items": [
         "Amazon Web Services (EC2, ECS, RDS, Lambda, Cognito, S3, Amplify and SQS)",
         "Google Cloud Platform",
+        "Digital Ocean",
         "Docker",
         "Docker Compose",
         "Git"
@@ -47,40 +50,55 @@
   ],
   "experience": [
     {
-      "company": "CapitalRoad Industries",
-      "position": "Software Developer",
+      "title": "CapitalRoad Industries",
+      "subTitle": "Software Developer",
       "startDate": "May 2019",
       "endDate": "Oct 2023",
       "description": [
-        "Initially joined as a contract worker, focused on establishing a test framework for a Java EJB\nmonolithic REST API supporting a financial tech SaaS product.",
-        "Transitioned to a full-time software developer role in December 2019, specializing in frontend\ndevelopment within a React.js project for the same SaaS product.",
-        "Led successful migration of the React.js project from class-based to hook-based architecture,\nimproving code maintainability and performance.",
+        "CapitalRoad is a small fintech startup that provides a B2B SaaS product to financial advisors\nfor wealth management. The product includes features such as share trading, custody\nmanagement and reporting.",
+        "Initially joined as a contract worker, focused on establishing a test framework for a Java EJB\nmonolithic REST API.",
+        "Transitioned to a full-time fullstack software developer role in December 2019, specializing in\nfrontend development within the main client facing React.js project.",
+        "Led the successful migration of the React.js project from class-based to hook-based architecture,\nimproving code maintainability and performance.",
+        "Kept a keen eye on tools like Google Lighthouse to consistently approve on the frontends performance, accessibility, best practices and search engine optimization.",
         "Demonstrated commitment to staying current with emerging technologies, consistently\nupdating and maintaining the project's technology stack.",
+        "I was involved in developing a Express.js microservice, which extended our monolithic system by\nproviding a transaction rollup service that integrated with a clients banking provider.",
         "Contributed to building Java Spring Boot microservices, enhancing system modularity and\nscalability.",
-        "Exhibited strong client-facing skills, actively engaging with clients and delivering tailored\nsolutions.",
-        "Spearheaded a project towards the end of my employment, showcasing leadership and autonomy\nin delivering cutting-edge solutions using React.js and Spring Boot technologies to build a\nclient-specific extension for our main SaaS product."
+        "Exhibited strong client-facing skills, actively engaging with end clients and delivering tailored\nsolutions.",
+        "Spearheaded a project, showcasing leadership and autonomy, delivering a cutting edge-solution\nusing React.js and Spring Boot technologies to build a B2C extension to our main SaaS product."
       ]
     }
   ],
   "education": [
     {
-      "institution": "Royal Melbourne Institute of Technology",
-      "degree": "Bachelor of Technology (Computing Studies)",
+      "title": "Royal Melbourne Institute of Technology",
+      "subTitle": "Bachelor of Technology (Computing Studies)",
       "startDate": "2017",
       "endDate": "2019",
       "description": [
         "Opted for a purposeful leave of absence from university, I directed my focus towards career\nopportunities at CapitalRoad",
         "While honing my expertise in programming languages like Java, Ruby, Python, and JavaScript, I\nconcurrently acquired valuable insights into agile project management methodologies.",
-        "My proficiency in Ruby and Vue.js, particularly, was cultivated through my capstone project, a\nfinancial tech SaaS product, showcasing practical application and hands-on experience.",
+        "For my capstone project, I led a team of three, over six months, developing a virtual share trading\ngame using Ruby on Rails and Vue.js, showcasing my ability to lead and collaborate with a team to\ndeliver innovative solutions.",
         "Additionally, I pursued a minor in business, broadening my knowledge and skills to complement\nmy technical background."
       ]
     },
     {
-      "institution": "Lakeview Senior College",
-      "degree": "Certificate III in Business",
+      "title": "Lakeview Senior College",
+      "subTitle": "Certificate III in Business",
       "startDate": "2014",
       "endDate": "2014",
       "description": "I completed my Certificate III in Business at Lakeview Senior College, where I delved into fundamental business practices. Through this program, I gained proficiency in essential skills such as spreadsheet production, the application of workplace health and safety (WHS) legislation, and effective organization of personal work priorities and development. These valuable insights not only expanded my knowledge in business operations but also equipped me with practical skills that have proven to be invaluable in my career pursuits"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Capstone Project at RMIT University",
+      "subTitle": "Virtual Share Trading Game",
+      "description": [
+        "The project was a virtual share trading game in which users needed the ability to signup, share trade\nand view their ranking on a leaderboard.",
+        "Over a six-month period, I successfully led a team of three individuals, leveraging agile methodologies\nto showcase my leadership and collaboration skills in delivering innovative solutions. We utilized Jira to efficiently manage project deliverables.",
+        "Built using a Ruby on Rails backend and a Vue.js frontend, showcasing my ability to work in a fullstack\nspace.",
+        "Deployed to Digital Ocean on their Droplets platform, using Docker and Docker Compose, showcasing\nmy ability to work with infrastructure technology and minimise costs."
+      ]
     }
   ]
 }

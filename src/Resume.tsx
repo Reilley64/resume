@@ -1,7 +1,8 @@
 import {Document, Font, Link, Page, Text, View} from "@react-pdf/renderer";
 import React from "react";
-import {createTw} from "react-pdf-tailwind";
 import data from "./data.json";
+import tw from "./tailwind";
+import Project from "./components/Project";
 
 Font.registerHyphenationCallback(word => [word]);
 
@@ -57,16 +58,6 @@ Font.register({
   ],
 });
 
-const tw = createTw({
-  theme: {
-    fontFamily: {
-      sans: "Geist Sans",
-      mono: "Geist Mono"
-    },
-    spacing: Object.fromEntries(Array.from({ length: 250 }, (_, i) => [i / 4, `${i ? i / 4 : i}rem`])),
-  },
-});
-
 function Resume() {
   return (
     <Document>
@@ -96,60 +87,28 @@ function Resume() {
           </View>
         </View>
 
-        <View style={tw("items-center mt-2.5")}>
+        <View style={tw("items-center mt-2.5 mb-[-16px]")}>
           <Text style={tw("uppercase text-[20px]")}>Experience</Text>
           <View style={tw("w-full h-[1px] bg-[#666666] mt-0.5 mb-1")} />
 
-          {data.experience.map((experience, x) => (
-            <View key={experience.company} style={tw(x > 0 ? "w-full mt-1" : "w-full")}>
-              <View style={tw("w-full")}>
-                <View style={tw("justify-between items-end flex-row w-full")}>
-                  <Text style={tw("text-[11px]")}>{experience.company}</Text>
-                  <Text style={tw("text-[8px] text-[#666666] uppercase font-mono font-light")}>{experience.startDate} - {experience.endDate}</Text>
-                </View>
-                <Text style={tw("text-[11px] font-bold mt-0.25")}>{experience.position}</Text>
-              </View>
+          {data.experience.map((experience, x) => <Project key={experience.title} {...experience} />)}
+        </View>
 
-              <View style={tw("text-[9px] text-[#666666] mt-1")}>
-                {experience.description.map((item, y) => (
-                  <View key={item} style={tw(y > 0 ? "flex-row mt-0.25" : "flex-row")}>
-                    <Text style={tw("mx-1 font-bold")}>•</Text>
-                    <Text>{item}</Text>
-                  </View>
-                ))}
-              </View>
-            </View>
-          ))}
-
-          <View style={tw("mt-2 w-full")}>
-            <Text style={tw("text-[9px] text-[#666666]")}>Referees available upon request</Text>
-          </View>
+        <View style={tw("mt-2.5 w-full")}>
+          <Text style={tw("text-[9px] text-[#666666]")}>Referees available upon request</Text>
         </View>
 
         <View style={tw("items-center mt-2.5")}>
           <Text style={tw("uppercase text-[20px]")}>Education</Text>
           <View style={tw("w-full h-[1px] bg-[#666666] mt-0.5 mb-1")} />
 
-          {data.education.map((education, x) => (
-            <View key={education.institution} style={tw(x > 0 ? "w-full mt-1" : "w-full")}>
-              <View style={tw("w-full")}>
-                <View style={tw("justify-between items-end flex-row w-full")}>
-                  <Text style={tw("text-[11px]")}>{education.institution}</Text>
-                  <Text style={tw("text-[8px] text-[#666666] uppercase font-mono font-light")}>{education.startDate} {(education.endDate && education.endDate !== education.startDate) ? `- ${education.endDate}` : null}</Text>
-                </View>
-                <Text style={tw("text-[11px] font-bold mt-0.25")}>{education.degree}</Text>
-              </View>
+          {data.education.map((education) => <Project key={education.title} {...education} />)}
+        </View>
 
-              <View style={tw("text-[9px] text-[#666666] mt-1")}>
-                {Array.isArray(education.description) ? education.description.map((item, y) => (
-                  <View key={item} style={tw(y > 0 ? "flex-row mt-0.25" : "flex-row")}>
-                    <Text style={tw("mx-1 font-bold")}>•</Text>
-                    <Text>{item}</Text>
-                  </View>
-                )) : <Text>{education.description}</Text>}
-              </View>
-            </View>
-          ))}
+        <View style={tw("items-center mt-2.5")}>
+          <Text style={tw("uppercase text-[20px]")}>Projects</Text>
+          <View style={tw("w-full h-[1px] bg-[#666666] mt-0.5 mb-1")} />
+          {data.projects.map((project) => <Project key={project.title} {...project} />)}
         </View>
 
         <View style={tw("mt-2.5")}>
