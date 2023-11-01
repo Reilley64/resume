@@ -44,7 +44,7 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-            tag_name: ${{ github.ref }}
+            tag_name: latest
             files: resume.pdf
             token: ${{ github.token }}
 
