@@ -26,7 +26,15 @@
     },
     {
       "heading": "Frameworks",
-      "items": ["React.js", "Vue.js", "Express.js", "Java EE/Jakarta EE", "Spring Boot", "Ruby on Rails", "Django"]
+      "items": [
+        "React.js",
+        "Vue.js",
+        "Express.js",
+        "Java EE/Jakarta EE",
+        "Spring Boot",
+        "Ruby on Rails",
+        "Django"
+      ]
     },
     {
       "heading": "Infrastructure",
@@ -36,7 +44,9 @@
         "Digital Ocean",
         "Docker",
         "Docker Compose",
-        "Git"
+        "Git",
+        "Splunk",
+        "Jenkins"
       ]
     }
   ],
@@ -51,9 +61,9 @@
         "Initially joined as a contract worker, focused on establishing a test framework for a Java EJB\nmonolithic REST API.",
         "Transitioned to a full-time fullstack software developer role in December 2019, specializing in\nfrontend development within the main client facing React.js project.",
         "Led the successful migration of the React.js project from class-based to hook-based architecture,\nimproving code maintainability and performance.",
-        "Kept a keen eye on tools like Google Lighthouse to consistently approve on the frontends performance, accessibility, best practices and search engine optimization.",
+        "Kept a keen eye on tools like Google Lighthouse to consistently improve upon the frontends performance, accessibility, best practices and search engine optimization.",
         "Demonstrated commitment to staying current with emerging technologies, consistently\nupdating and maintaining the project's technology stack.",
-        "I was involved in developing a Express.js microservice, which extended our monolithic system by\nproviding a transaction rollup service that integrated with a clients banking provider.",
+        "I was involved in developing a Express.js microservice, which extended our monolithic system by\nproviding a B2C transaction rollup service that integrated with a clients banking provider.",
         "Contributed to building Java Spring Boot microservices, enhancing system modularity and\nscalability.",
         "Exhibited strong client-facing skills, actively engaging with end clients and delivering tailored\nsolutions.",
         "Spearheaded a project, showcasing leadership and autonomy, delivering a cutting edge-solution\nusing React.js and Spring Boot technologies to build a B2C extension to our main SaaS product."
