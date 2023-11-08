@@ -61,6 +61,7 @@
         "Initially joined as a contract worker, focused on establishing a test framework for a Java EJB\nmonolithic REST API.",
         "Transitioned to a full-time fullstack software developer role in December 2019, specializing in\nfrontend development within the main client facing React.js project.",
         "Led the successful migration of the React.js project from class-based to hook-based architecture,\nimproving code maintainability and performance.",
+        "Designed and developed a versatile React component library with Rollup and Storybook, enhancing code\nreusability and efficiency across diverse projects.",
         "Kept a keen eye on tools like Google Lighthouse to consistently improve upon the frontends performance, accessibility, best practices and search engine optimization.",
         "Demonstrated commitment to staying current with emerging technologies, consistently\nupdating and maintaining the project's technology stack.",
         "I was involved in developing a Express.js microservice, which extended our monolithic system by\nproviding a B2C transaction rollup service that integrated with a clients banking provider.",
