@@ -4,36 +4,29 @@
   "phoneNumber": "+61 435 887 041",
   "email": "reilleygray@gmail.com",
   "website": "linkedin.com/in/reilley-gray",
-  "description": "Software Developer with over four years of experience in fullstack development. Expertise in Java and JavaScript, and a proficiency in React.js for front-end development. Committed to delivering innovative solutions and continuously expanding my skill set over the entire software development lifecycle. Ready to contribute to your team's success through collaborative efforts.",
+  "description": "Software Developer with 6+ years of experience building and scaling fintech, payments, and enterprise platforms. Strong background across backend systems (Java, .NET, Go, Rust) and modern frontends (React, Vue, Angular), with a focus on reliability, maintainability, and clean architecture. Committed to delivering innovative solutions and continuously expanding my skill set over the entire software development lifecycle. Ready to contribute to your team's success through collaborative efforts.",
   "skills": [
     {
-      "heading": "Languages",
+      "heading": "Frontend",
       "items": [
         "Javascript",
         "Node.js",
         "Typescript",
-        "Java",
-        "Ruby",
-        "Python",
-        "PHP",
+        "React.js",
+        "Vue.js",
+        "Angular",
         "HTML",
         "CSS",
-        "SQL",
-        "MySQL",
-        "PostgreSQL",
-        "Redis"
+        "Tailwind CSS"
       ]
     },
     {
-      "heading": "Frameworks",
+      "heading": "Backend",
       "items": [
-        "React.js",
-        "Vue.js",
-        "Express.js",
-        "Java EE/Jakarta EE",
-        "Spring Boot",
-        "Ruby on Rails",
-        "Django"
+        "Java (EJB, Sprint Boot)",
+        "C# (.NET, Entity Framework)",
+        "Rust",
+        "SQL (PostgreSQL, Microsoft SQL and MySQL)"
       ]
     },
     {
@@ -41,33 +34,88 @@
       "items": [
         "Amazon Web Services (EC2, ECS, RDS, Lambda, Cognito, S3, Amplify and SQS)",
         "Google Cloud Platform",
-        "Digital Ocean",
+        "Azure",
+        "Terraform",
         "Docker",
         "Docker Compose",
         "Git",
-        "Splunk",
-        "Jenkins"
+        "CI/CD (Github Actions, Azure Pipelines)"
       ]
     }
   ],
   "experience": [
+    {
+      "title": "Netwealth",
+      "subTitle": "Full Stack Developer",
+      "startDate": "May 2025",
+      "endDate": "Present",
+      "description": [
+        "Contributed to the design and development of a .NET and Angular based platform on Azure, delivering enterprise solutions backed by Microsoft SQL Server.",
+        "Initiated on the fees calculation product, learning about the fees process and actively contributing to the development.",
+        "Helped lead and architect the development of the corporate actions product for a registry focus project, translating complex financial services domain requirements into scalable, production-ready software.",
+        "Mentored developers in my team, providing guidance on architecture, coding standards, and best practices, lifting overall team capabilities.",
+        "Regularly initiated and led conversations with product owners, delivery leads, and other key stakeholders, to unblock work, refine scope and drive alignment across my team.",
+        "Actively supported and facilitated Scrum events including backlog refinement, sprint planning and sprint retrospectives, earning my Professional Scrum Master certification from scrum.org."
+      ]
+    },
+    {
+      "title": "Knocknoc",
+      "subTitle": "Full Stack Developer",
+      "startDate": "Jan 2025",
+      "endDate": "May 2025",
+      "description": [
+        "Worked on a just-in-time security access platform, contributing across backend services written in Golang and frontend application built with Vue.js.",
+        "Served as the lead developer for the Vue.js user interface, owning frontend architecture, component structure, and implementation quality.",
+        "Led significant UI refactoring efforts, modernising the interface, improve usability, and increasing consistency across the application.",
+        "Drove improvements to frontend maintainability by establishing clearer component boundaries, reusable patterns, and cleaner state management.",
+        "Solely developed the license authentication module, owning it's design and implementation to ensure secure, reliable validation and enforcement of licensing controls."
+      ]
+    },
+    {
+      "title": "Waave/Banked",
+      "subTitle": "Full Stack Developer",
+      "startDate": "Feb 2024",
+      "endDate": "Jan 2025",
+      "description": [
+        "Led recent development in Golang, creating a replication mock service for a partners API based on API documentation the partner provided.",
+        "During my time at Waave, I worked on a highly available, low-latency payments system, focusing on developing highly maintainable code. I developed and maintained a payments gateway, partner integrations, and open banking services, ensuring seamless operation and compliance with open banking standards (CDR).",
+        "Delivered features from development through to production, owning my products and tasks throughout the entire process. Ensured quality and zero disruption to live systems and customers by conducting post-verification testing.",
+        "Assisted with production support by tracing transactions end-to-end across multiple cloud computing platforms, swiftly identifying and resolving issues, and leveraging insights to suggest and implement enhancements to the admin platform, streamlining daily operations and improving overall efficiency.",
+        "Refactored the payments integration layer by implementing inheritance and dependency injection strategies, streamlining the integration of new payment partners and expanding the system's integration capabilities.",
+        "Built and maintained CI/CD pipelines for front-end and back-end services.",
+        "Used BigQuery and Looker for internal data visualization providing insightful analytics, as well as using these services as a base to build a custom transaction reporting solution for merchants.",
+        "Led the development of a React.js front end component library that could be used easily to create user experiences over multiple frontend projects.",
+        "Built an upgraded customer facing experience based on provided user design documents, to improve customer engagement.",
+        "Developed and launched an enhanced merchant portal without formal design documentation, to drive increased engagement and improve the user experience for merchants."
+      ]
+    },
+    {
+      "title": "i-InvestDirect",
+      "subTitle": "Software Developer",
+      "startDate": "Nov 2023",
+      "endDate": "Feb 2024",
+      "description": [
+        "Joined based on the work I previously did for them at CapitalRoad Industries; they appreciated my contributions and hired me after CapitalRoad's closure to continue supporting their projects.",
+        "Lead Developer on their B2C platform, driving the development and delivery of key features and enhancements.",
+        "Developed a full-stack consumer-facing system using Java Spring Boot and React.js, delivering a seamless user experience.",
+        "Handled DevOps responsibilities and deployed their services to AWS, ensuring reliable and scalable infrastructure.",
+        "Managed my own agile board, ensuring my work was consistently trackable and aligned with project milestones."
+      ]
+    },
     {
       "title": "CapitalRoad Industries",
       "subTitle": "Software Developer",
       "startDate": "May 2019",
       "endDate": "Oct 2023",
       "description": [
-        "CapitalRoad is a small fintech startup that provides a B2B SaaS product to financial advisors\nfor wealth management. The product includes features such as share trading, custody\nmanagement and reporting.",
-        "Initially joined as a contract worker, focused on establishing a test framework for a Java EJB\nmonolithic REST API.",
-        "Transitioned to a full-time fullstack software developer role in December 2019, specializing in\nfrontend development within the main client facing React.js project.",
-        "Led the successful migration of the React.js project from class-based to hook-based architecture,\nimproving code maintainability and performance.",
-        "Designed and developed a versatile React component library with Rollup and Storybook, enhancing code\nreusability and efficiency across diverse projects.",
-        "Kept a keen eye on tools like Google Lighthouse to consistently improve upon the frontends performance, accessibility, best practices and search engine optimization.",
-        "Demonstrated commitment to staying current with emerging technologies, consistently\nupdating and maintaining the project's technology stack.",
-        "I was involved in developing a Express.js microservice, which extended our monolithic system by\nproviding a B2C transaction rollup service that integrated with a clients banking provider.",
-        "Contributed to building Java Spring Boot microservices, enhancing system modularity and\nscalability.",
-        "Exhibited strong client-facing skills, actively engaging with end clients and delivering tailored\nsolutions.",
-        "Spearheaded a project, showcasing leadership and autonomy, delivering a cutting edge-solution\nusing React.js and Spring Boot technologies to build a B2C extension to our main SaaS product."
+        "Initially joined as a contract worker, focused on establishing a test framework for a Java EJB monolithic REST API supporting a financial tech SaaS product.",
+        "Transitioned to a full-time software developer role in December 2019, specializing in frontend development within a React.js project for the same SaaS product.",
+        "Led successful migration of the React.js project from class-based to hook-based architecture, improving code maintainability and performance.",
+        "Demonstrated commitment to staying current with emerging technologies, consistently updating and maintaining the project's technology stack.",
+        "Contributed to building Java Spring Boot microservices, enhancing system modularity and scalability.",
+        "Built and maintained CI/CD pipelines for front-end and back-end services.",
+        "Exhibited strong client-facing skills, actively engaging with clients and delivering tailored solutions.",
+        "Spearheaded a project for i-InvestDirect towards the end of my employment, showcasing leadership and autonomy in delivering cutting-edge solutions using React.js and Spring Boot technologies to build a client-specific extension for our main SaaS product."
       ]
     }
   ],
@@ -92,16 +140,11 @@
       "description": "I completed my Certificate III in Business at Lakeview Senior College, where I delved into fundamental business practices. Through this program, I gained proficiency in essential skills such as spreadsheet production, the application of workplace health and safety (WHS) legislation, and effective organization of personal work priorities and development. These valuable insights not only expanded my knowledge in business operations but also equipped me with practical skills that have proven to be invaluable in my career pursuits"
     }
   ],
-  "projects": [
+  "certificates": [
     {
-      "title": "Capstone Project at RMIT University",
-      "subTitle": "Virtual Share Trading Game",
-      "description": [
-        "The project was a virtual share trading game in which users needed the ability to signup, share trade\nand view their ranking on a leaderboard.",
-        "Over a six-month period, I successfully led a team of three individuals, leveraging agile methodologies\nto showcase my leadership and collaboration skills in delivering innovative solutions. We utilized Jira to efficiently manage project deliverables.",
-        "Built using a Ruby on Rails backend and a Vue.js frontend, showcasing my ability to work in a fullstack\nspace.",
-        "Deployed to Digital Ocean on their Droplets platform, using Docker and Docker Compose, showcasing\nmy ability to work with infrastructure technology and minimise costs."
-      ]
+      "title": "Professional Scrum Master I",
+      "subTitle": "Scrum.org",
+      "date": "Nov 2025"
     }
   ]
 }

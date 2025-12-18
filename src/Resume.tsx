@@ -1,5 +1,6 @@
 import { Document, Font, Link, Page, Text, View } from "@react-pdf/renderer";
 import React from "react";
+import Certificate from "./components/Certificate";
 
 import Project from "./components/Project";
 import data from "./data.json";
@@ -111,10 +112,10 @@ function Resume() {
         </View>
 
         <View style={tw("items-center mt-2.5 mb-[-16px]")}>
-          <Text style={tw("uppercase text-[20px]")}>Projects</Text>
+          <Text style={tw("uppercase text-[20px]")}>Certificates</Text>
           <View style={tw("w-full h-[1px] bg-[#666666] mt-0.5 mb-1")} />
-          {data.projects.map((project) => (
-            <Project key={project.title} {...project} />
+          {data.certificates.map((project) => (
+            <Certificate key={project.title} {...project} />
           ))}
         </View>
 
