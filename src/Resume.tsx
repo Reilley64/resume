@@ -65,7 +65,7 @@ function Resume() {
     <Document>
       <Page size="A4" style={tw("px-6 py-6 font-sans")}>
         <View style={tw("items-center justify-center")}>
-          <Text style={tw("uppercase text-[26px]")}>{data.name}</Text>
+          <Text style={tw("uppercase text-[20px]")}>{data.name}</Text>
 
           <Text style={tw("text-[10px] mt-0.5 text-[#666666] text-center")}>
             {[data.location, data.phoneNumber, data.email, data.website].filter(Boolean).join(" • ")}
@@ -73,14 +73,14 @@ function Resume() {
 
           <View style={tw("w-full h-[1px] bg-[#666666] mt-0.5 mb-1")} />
 
-          <Text style={tw("text-[9px] text-[#666666] text-center")}>{data.description}</Text>
+          <Text style={tw("text-[9px] text-[#666666]")}>{data.description}</Text>
         </View>
 
         <View style={tw("items-center justify-center mt-2.5")}>
           <Text style={tw("uppercase text-[20px]")}>Skills</Text>
           <View style={tw("w-full h-[1px] bg-[#666666] mt-0.5 mb-1")} />
 
-          <View style={tw("text-[9px] text-[#666666] text-center items-center")}>
+          <View style={tw("text-[9px] text-[#666666]")}>
             {data.skills.map((skill, i) => (
               <Text key={skill.heading} style={i > 0 ? tw("mt-0.5") : undefined}>
                 <Text style={tw("font-bold")}>{skill.heading}:</Text> {skill.items.join(", ")}

@@ -15,8 +15,8 @@ function Project(props: {
   return (
     <View style={tw("w-full mb-1")}>
       <View style={tw("w-full")}>
-        <View style={tw("justify-between items-end flex-row w-full")}>
-          <Text style={tw("text-[11px]")}>{title}</Text>
+        <View style={tw("justify-between items-center flex-row w-full")}>
+          <Text style={tw("font-bold text-[11px]")}>{title}</Text>
 
           {startDate ? (
             <Text style={tw("text-[8px] text-[#666666] uppercase font-mono font-light text-right")}>
@@ -25,7 +25,7 @@ function Project(props: {
           ) : null}
         </View>
 
-        <Text style={tw("text-[11px] font-bold mt-0.25")}>{subTitle}</Text>
+        <Text style={tw("text-[10px] mt-0.25")}>{subTitle}</Text>
       </View>
 
       <View style={tw("text-[9px] text-[#666666] mt-1")}>
